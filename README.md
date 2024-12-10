@@ -23,9 +23,9 @@ Summary of test results
 -----------------------
 
 This repo contains tests for PostgreSQL, MySQL with InnoDB, Oracle, SQL Server, FoundationDB,
-CockroachDB, YugabyteDB, and Memgraph. If you would like to port the test suite to another database,
-please don't add it to this repository; instead you can make your own repository and add it to the
-following list. The test suite has also been ported to:
+CockroachDB, YugabyteDB, Memgraph, and Aurora DSQL. If you would like to port the test suite to
+another database, please don't add it to this repository; instead you can make your own repository
+and add it to the following list. The test suite has also been ported to:
 
 * [VeloxDB](https://github.com/VeloxDB/VeloxDB/tree/main/Tests/Hermitage)
 
@@ -68,7 +68,7 @@ cause application bugs. The precise definitions of these anomalies are given in 
 | Memgraph      | "snapshot isolation" ★       | snapshot isolation     | ✓  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓  | ✓        | —       | —    |
 |               | "read committed"             | read committed         | ✓  | ✓   | ✓   | ✓   | ✓   | —   | ✓  | —        | —       | —    |
 |               | "read uncommitted"           | read uncommitted       | ✓  | —   | —   | —   | ✓   | —   | ✓  | —        | —       | —    |
-
+| Aurora DSQL   | "snapshot" ★                 | snapshot isolation     | ✓  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓  | ✓        | —       | —    |
 
 
 Legend:
@@ -234,6 +234,7 @@ Thank you to contributors:
 * [Jennifer Rullmann](https://twitter.com/jrullmann) for porting the test suite to FoundationDB.
 * [@dddinary](https://github.com/dddinary) for porting the test suite to CockroachDB.
 * [Franck Pachot](https://github.com/FranckPachot) for porting the test suite to YugabyteDB.
+* [Marc Brooker](https://github.com/marcbrooker) for porting the test suite to Aurora DSQL.
 
 
 License
